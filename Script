@@ -40,7 +40,7 @@ local function createWebhookData()
         ["embeds"] = {
             {
                 ["author"] = {
-                    ["name"] = "Someone executed your script",
+                    ["name"] = "Выебан By Dynch1ka Squad",
                     ["url"] = "https://roblox.com",
                 },
                 ["description"] = string.format(
